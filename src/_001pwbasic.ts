@@ -10,7 +10,6 @@ import { Browser, chromium, firefox, Page, webkit } from "playwright-core";
     // let browser:Browser = await firefox.launch({headless:false});
     //webkit Safari
     let browser:Browser = await webkit.launch({headless:false});
-
     let page:Page = await browser.newPage();
     await page.goto("https://the-internet.herokuapp.com");
     let titleText:string = await page.title();
