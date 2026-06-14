@@ -59,7 +59,16 @@
      * this will exclude that attribute from list.
      * - tag:not(attr='value')
      * - tag:not(attr1='value1'):not(attr2='value2')
-     *
+     * 
+     * Using psuedo Class
+     * this will check partial / contains matching
+     * - tag:has-text("textValue") 
+     * this will check exact matching
+     * - tag:text-is("text value")
+     * - tag('text=value of text')
+     * 
+     * 
+     * 
      *                          xpath               vs                  css
      *  1. syntex               complex                                 easy
      *  2. performance          good                                    good
